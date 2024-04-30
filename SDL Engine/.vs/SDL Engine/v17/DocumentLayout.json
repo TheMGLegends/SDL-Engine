@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "B:\\University Projects\\SDL-Engine\\SDL Engine\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-30T10:55:50.548Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
