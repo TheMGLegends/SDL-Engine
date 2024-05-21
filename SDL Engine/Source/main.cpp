@@ -7,6 +7,8 @@
 #include "SDL_mixer.h"
 #include "SDL_ttf.h"
 
+#include "Time/TimeHandler.h"
+
 int main(int argc, char* argv[])
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING))
@@ -22,6 +24,17 @@ int main(int argc, char* argv[])
 		std::cout << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
 		return 1;
 	}
+
+	// INFO: TimeHandler Testing
+	/*
+	for (int i = 0; i < 10000; i++)
+	{
+		TimeHandler::Tick();
+
+		//std::cout << "ElapsedTime: " << TimeHandler::GetElapsedTime() << std::endl;
+		std::cout << "DeltaTime: " << TimeHandler::GetDeltaTime() << std::endl;
+	}
+	*/
 
 	(void)getchar();
 
