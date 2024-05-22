@@ -21,5 +21,11 @@ public:
 	static inline float GetElapsedTime() { return elapsedTime; }
 	static inline void SetTimeScale(float _timeScale) { timeScale = _timeScale; }
 	static inline float GetTimeScale() { return timeScale; }
+
+private:
+	TimeHandler() = delete;
+	~TimeHandler() = delete;
+	TimeHandler(const TimeHandler&) = delete;
+	TimeHandler& operator=(const TimeHandler&) = delete;
 };
 
