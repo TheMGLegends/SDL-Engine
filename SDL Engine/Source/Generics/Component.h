@@ -15,6 +15,6 @@ protected:
 public:
 	//Component(GameObject* _owner) : owner(_owner) {}
 	Component(std::weak_ptr<GameObject> _owner) : owner(_owner) {}
-	virtual ~Component() = 0;
+	virtual ~Component() = 0 {}
 };
 

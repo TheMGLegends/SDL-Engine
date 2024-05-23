@@ -12,7 +12,7 @@ void TimeHandler::Tick()
 	currentTime = std::chrono::steady_clock::now();
 
 	// INFO: The time between frames in seconds
-	deltaTime = std::chrono::duration_cast<std::chrono::nanoseconds>(currentTime - previousTime).count() / 1e9;
+	deltaTime = static_cast<float>(std::chrono::duration_cast<std::chrono::nanoseconds>(currentTime - previousTime).count() / 1e9);
 	
 	// INFO: The time since the start of the application in seconds
 	elapsedTime += deltaTime;

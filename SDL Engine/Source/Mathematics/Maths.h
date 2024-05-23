@@ -3,7 +3,7 @@
 struct Maths
 {
 public:
-	static const double PI;
+	static const float PI;
 
 public:
 	static float DegToRad(float deg);

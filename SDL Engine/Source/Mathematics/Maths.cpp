@@ -2,7 +2,7 @@
 
 #include <cmath>
 
-const double Maths::PI = 3.14159265358979323846;
+const float Maths::PI = 3.1415f;
 
 float Maths::DegToRad(float deg)
 {

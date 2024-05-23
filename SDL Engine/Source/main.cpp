@@ -10,6 +10,7 @@
 #include "Time/TimeHandler.h"
 #include "Mathematics/Maths.h"
 #include "Mathematics/Vector2.h"
+#include "Mathematics/Transform.h"
 
 int main(int argc, char* argv[])
 {
@@ -122,6 +123,36 @@ int main(int argc, char* argv[])
 	Maths::Clamp(5.0f, 1.0f, 3.1f);
 	Maths::Max(5.0f, 10.0f);
 	Maths::Min(5.0f, 10.0f);
+	*/
+
+	// INFO: Transform Testing
+	/*
+	Transform t(std::weak_ptr<GameObject>(), 5.0f, 10.0f);
+	Transform t2{ std::weak_ptr<GameObject>(), Vector2(10.0f, 10.0f)};
+
+	t.Translate(5.0f, 10.0f);
+	t.Translate(Vector2(5.0f, 10.0f));
+
+	t.TranslateX(5.0f);
+	t.TranslateY(10.0f);
+
+	t2.Up();
+	t2.Right();
+
+	t2.RotateZ(90.0f);
+
+	t2.Up();
+	t2.Right();
+
+	t2.RotateZ(90.0f);
+
+	t2.Up();
+	t2.Right();
+
+	t2.RotateZ(90.0f);
+
+	t2.Up();
+	t2.Right();
 	*/
 
 	(void)getchar();
