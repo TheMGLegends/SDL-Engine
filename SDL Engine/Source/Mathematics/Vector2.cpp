@@ -37,12 +37,12 @@ Vector2 Vector2::Lerp(const Vector2& V1, const Vector2& V2, float t)
 	return V1 + (V2 - V1) * t;
 }
 
-float Vector2::Magnitude()
+float Vector2::Magnitude() const
 {
 	return std::sqrt(std::powf(X, 2) + std::powf(Y, 2));
 }
 
-float Vector2::SqrMagnitude()
+float Vector2::SqrMagnitude() const
 {
 	return std::powf(X, 2) + std::powf(Y, 2);
 }

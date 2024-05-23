@@ -1,5 +1,6 @@
 #pragma once
 
+/// @brief Static holder struct for mathematical operations
 struct Maths
 {
 public:

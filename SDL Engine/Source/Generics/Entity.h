@@ -1,6 +1,6 @@
 #pragma once
 
-/// @brief Abstract class used as a base for all entities
+/// @brief Abstract base class for all entities to inherit from
 class Entity
 {
 protected:

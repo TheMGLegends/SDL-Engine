@@ -16,13 +16,16 @@ public:
 public:
 	Vector2(float _X = 0.0f, float _Y = 0.0f) : X(_X), Y(_Y) {}
 
+	/// @brief Normalizes the original passed in vector
 	static void Normalize(Vector2& v);
 	static float Dot(const Vector2& V1, const Vector2& V2);
 	static float Distance(const Vector2& V1, const Vector2& V2);
 	static Vector2 Lerp(const Vector2& V1, const Vector2& V2, float t);
 
-	float Magnitude();
-	float SqrMagnitude();
+	float Magnitude() const;
+	float SqrMagnitude() const;
+
+	/// @brief Returns a new normalized vector of the vector that called the function
 	Vector2 Normalized();
 
 	inline Vector2 operator+(const Vector2& V) const { return Vector2(X + V.X, Y + V.Y); }

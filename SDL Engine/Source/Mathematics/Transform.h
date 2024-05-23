@@ -4,6 +4,7 @@
 
 #include "Vector2.h"
 
+/// @brief Transform component class for GameObjects
 class Transform : public Component
 {
 public:
@@ -12,9 +13,16 @@ public:
 
 public:
 	//Transform(GameObject* _owner, float X, float Y, float zRot);
-	Transform(std::weak_ptr<GameObject> _owner, float X, float Y /*, float zRot*/);
 	//Transform(GameObject* _owner, Vector2 pos, float zRot);
+	
+	/// @brief Constructor
+	/// @param _owner : The GameObject that owns this component
+	Transform(std::weak_ptr<GameObject> _owner, float X, float Y /*, float zRot*/);
+
+	/// @brief Constructor
+	/// @param _owner : The GameObject that owns this component
 	Transform(std::weak_ptr<GameObject> _owner, Vector2 pos /*, float zRot*/);
+
 	~Transform() override {}
 
 	inline void Translate(float X, float Y) { position.X += X; position.Y += Y; }
