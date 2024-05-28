@@ -8,7 +8,7 @@ protected:
 
 public:
 	Entity() : isActive(true) {}
-	virtual ~Entity() = 0 {}
+	virtual ~Entity() = 0 {};
 
 	inline void SetIsActive(bool _isActive) { isActive = _isActive; }
 	inline bool GetIsActive() const { return isActive; }

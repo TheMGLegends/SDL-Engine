@@ -4,13 +4,13 @@
 
 #include "Maths.h"
 
-Transform::Transform(std::weak_ptr<GameObject> _owner, float X, float Y /*, float zRot*/)
-	: Component(_owner), position(X, Y) /*, zRotation(zRot)*/
+Transform::Transform(std::shared_ptr<GameObject> _owner, float X, float Y /*, float _zRotation*/)
+	: Component(_owner), position(X, Y) /*, zRotation(_zRotation)*/
 {
 }
 
-Transform::Transform(std::weak_ptr<GameObject> _owner, Vector2 pos /*, float zRot*/)
-	: Component(_owner), position(pos) /*, zRotation(zRot)*/
+Transform::Transform(std::shared_ptr<GameObject> _owner, Vector2 _position /*, float _zRotation*/)
+	: Component(_owner), position(_position) /*, zRotation(_zRotation)*/
 {
 }
 

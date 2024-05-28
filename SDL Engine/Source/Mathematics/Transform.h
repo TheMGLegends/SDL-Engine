@@ -17,13 +17,13 @@ public:
 	
 	/// @brief Constructor
 	/// @param _owner : The GameObject that owns this component
-	Transform(std::weak_ptr<GameObject> _owner, float X, float Y /*, float zRot*/);
+	Transform(std::shared_ptr<GameObject> _owner, float X, float Y /*, float _zRotation*/);
 
 	/// @brief Constructor
 	/// @param _owner : The GameObject that owns this component
-	Transform(std::weak_ptr<GameObject> _owner, Vector2 pos /*, float zRot*/);
+	Transform(std::shared_ptr<GameObject> _owner, Vector2 _position /*, float _zRotation*/);
 
-	~Transform() override {}
+	~Transform() override {};
 
 	inline void Translate(float X, float Y) { position.X += X; position.Y += Y; }
 	inline void Translate(const Vector2& translation) { position += translation; }

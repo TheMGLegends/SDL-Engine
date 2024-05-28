@@ -1,4 +1,9 @@
-﻿  Transform.cpp
+﻿  Collider.cpp
+  Maths.cpp
+  GameObject.cpp
   main.cpp
+  TimeHandler.cpp
+  Vector2.cpp
+  Transform.cpp
   Generating Code...
   SDL Engine.vcxproj -> B:\University Projects\SDL-Engine\SDL Engine\x64\Debug\SDL Engine.exe
