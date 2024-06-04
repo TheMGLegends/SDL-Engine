@@ -16,7 +16,7 @@ enum class ColliderType
 };
 
 /// @brief Abstract base class for all collider types
-class Collider : public Component
+class Collider : public Component, public std::enable_shared_from_this<Collider>
 {
 protected:
 	ColliderType colliderType;
@@ -34,7 +34,8 @@ protected:
 	std::function<void(std::shared_ptr<Collider>)> collisionExitResponse;
 
 public:
-	Collider(Vector2 _position, Vector2 _offset, std::shared_ptr<GameObject> _owner);
+	//Collider(GameObject* _owner, Vector2 _position, Vector2 _offset);
+	Collider(std::shared_ptr<GameObject> _owner, Vector2 _position, Vector2 _offset);
 	virtual ~Collider() = 0 {};
 
 	inline void SetColliderType(ColliderType _colliderType) { colliderType = _colliderType; }

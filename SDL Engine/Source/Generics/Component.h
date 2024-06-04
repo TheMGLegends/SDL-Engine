@@ -15,9 +15,6 @@ protected:
 
 public:
 	//Component(GameObject* _owner) : owner(_owner) {}
-	
-	/// @brief Constructor
-	/// @param _owner : The GameObject that owns this component
 	Component(std::shared_ptr<GameObject> _owner) : owner(_owner) {}
 	virtual ~Component() = 0 {};
 
