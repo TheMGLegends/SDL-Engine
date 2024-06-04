@@ -133,6 +133,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Collisions\CircleCollider.cpp" />
+    <ClCompile Include="Source\Collisions\BoxCollider.cpp" />
+    <ClCompile Include="Source\Collisions\CollisionHandler.cpp" />
     <ClCompile Include="Source\Collisions\Collider.cpp" />
     <ClCompile Include="Source\Mathematics\Maths.cpp" />
     <ClCompile Include="Source\GameObject\GameObject.cpp" />
@@ -142,6 +145,9 @@
     <ClCompile Include="Source\Mathematics\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Collisions\CircleCollider.h" />
+    <ClInclude Include="Source\Collisions\BoxCollider.h" />
+    <ClInclude Include="Source\Collisions\CollisionHandler.h" />
     <ClInclude Include="Source\Collisions\Collider.h" />
     <ClInclude Include="Source\Mathematics\Maths.h" />
     <ClInclude Include="Source\Generics\Component.h" />
