@@ -5,6 +5,7 @@
 #include "../Mathematics/Vector2.h"
 
 #include <functional>
+#include <vector>
 
 /// @brief Enum class represents the different types of colliders
 enum class ColliderType
@@ -22,7 +23,7 @@ protected:
 	ColliderType colliderType;
 	Vector2 position;
 	Vector2 offset;
-	bool isColliding;
+	std::vector<std::weak_ptr<Collider>> collidingColliders;
 
 	/*
 	std::function<void(Collider*)> collisionEnterResponse;
@@ -47,8 +48,8 @@ public:
 	inline void SetOffset(Vector2 _offset) { offset = _offset; }
 	inline Vector2 GetOffset() const { return offset; }
 
-	inline void SetIsColliding(bool _isColliding) { isColliding = _isColliding; }
-	inline bool GetIsColliding() const { return isColliding; }
+	inline void AddCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.push_back(c); }
+	inline void RemoveCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.erase(std::remove(collidingColliders.begin(), collidingColliders.end(), c), collidingColliders.end()); }
 
 	/*
 	inline std::function<void(Collider*)> GetCollisionEnterResponse() const { return collisionEnterResponse; }

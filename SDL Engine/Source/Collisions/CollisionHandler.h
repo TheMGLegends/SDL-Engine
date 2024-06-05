@@ -34,6 +34,8 @@ private:
 	static void BoxBoxCollision(std::shared_ptr<BoxCollider> b1, std::shared_ptr<BoxCollider> b2);
 	static void CircleBoxCollision(std::shared_ptr<CircleCollider> c, std::shared_ptr<BoxCollider> b);
 
+	static void HandleCollisionResponse(std::shared_ptr<Collider> c1, std::shared_ptr<Collider> c2, bool hasCollided);
+
 private:
 	CollisionHandler() = delete;
 	~CollisionHandler() = delete;

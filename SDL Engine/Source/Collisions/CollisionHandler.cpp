@@ -60,9 +60,17 @@ void CollisionHandler::CircleCircleCollision(std::shared_ptr<CircleCollider> c1,
 	// INFO: The sum of the radii of the two circles
 	float totalRadius = c1->GetRadius() + c2->GetRadius();
 
+	// INFO: Flag to check if the colliders have collided
+	bool hasCollided = false;
+
 	// INFO: Check if the distance between the two circles is less than the sum of their radii
-	// MAKE SURE TO CHECK STATE OF isColliding bool and based on that and the result from this
-	// YOU'LL KNOW WHETHER TO DO COLLISION ENTER, STAY OR EXIT
+	if ((dx * dx) + (dy * dy) < totalRadius * totalRadius)
+	{
+		hasCollided = true;
+	}
+
+	// INFO: Handle the collision response
+	HandleCollisionResponse(c1, c2, hasCollided);
 }
 
 void CollisionHandler::BoxBoxCollision(std::shared_ptr<BoxCollider> b1, std::shared_ptr<BoxCollider> b2)
@@ -73,6 +81,36 @@ void CollisionHandler::BoxBoxCollision(std::shared_ptr<BoxCollider> b1, std::sha
 		std::cout << "CollisionHandler::BoxBoxCollision: One or both colliders are null." << std::endl;
 		return;
 	}
+
+	// INFO: Get box 1 and 2 positions
+	Vector2 b1Pos = b1->GetPosition();
+	Vector2 b2Pos = b2->GetPosition();
+
+	// INFO: The min and max x and y values of the first box collider
+	float b1MinX = b1Pos.X;
+	float b1MaxX = b1Pos.X + b1->GetWidth();
+
+	float b1MinY = b1Pos.Y;
+	float b1MaxY = b1Pos.Y + b1->GetHeight();
+
+	// INFO: The min and max x and y values of the second box collider
+	float b2MinX = b2Pos.X;
+	float b2MaxX = b2Pos.X + b2->GetWidth();
+
+	float b2MinY = b2Pos.Y;
+	float b2MaxY = b2Pos.Y + b2->GetHeight();
+
+	// INFO: Flag to check if the colliders have collided
+	bool hasCollided = false;
+
+	// INFO: Check for overlap between the two box colliders
+	if (b1MaxX > b2MinX && b1MinX < b2MaxX && b1MaxY > b2MinY && b1MinY < b2MaxY)
+	{
+		hasCollided = true;
+	}
+
+	// INFO: Handle the collision response
+	HandleCollisionResponse(b1, b2, hasCollided);
 }
 
 void CollisionHandler::CircleBoxCollision(std::shared_ptr<CircleCollider> c, std::shared_ptr<BoxCollider> b)
@@ -83,4 +121,70 @@ void CollisionHandler::CircleBoxCollision(std::shared_ptr<CircleCollider> c, std
 		std::cout << "CollisionHandler::CircleBoxCollision: One or both colliders are null." << std::endl;
 		return;
 	}
+
+	// INFO: Initialize variables used to determine collision
+	float closestX = 0;
+	float closestY = 0;
+
+	// INFO: Get the centre position and radius of the circle
+	Vector2 cCentrePos = c->GetCentrePosition();
+	float cRadius = c->GetRadius();
+
+	// INFO: Get box position
+	Vector2 bPos = b->GetPosition();
+
+	// INFO: Get the min and max x and y values of the box collider
+	float bMinX = bPos.X;
+	float bMaxX = bPos.X + b->GetWidth();
+
+	float bMinY = bPos.Y;
+	float bMaxY = bPos.Y + b->GetHeight();
+
+	// INFO: Find the closest x value to the circles' centre x
+	if (cCentrePos.X < bMinX)
+	{
+		closestX = bMinX;
+	}
+	else if (cCentrePos.X > bMaxX)
+	{
+		closestX = bMaxX;
+	}
+	else
+	{
+		closestX = cCentrePos.X;
+	}
+
+	// INFO: Find the closest y value to the circles' centre y
+	if (cCentrePos.Y < bMinY)
+	{
+		closestY = bMinY;
+	}
+	else if (cCentrePos.Y > bMaxY)
+	{
+		closestY = bMaxY;
+	}
+	else
+	{
+		closestY = cCentrePos.Y;
+	}
+
+	// INFO: The difference between the circle's centre and the closest x and y values
+	float dx = cCentrePos.X - closestX;
+	float dy = cCentrePos.Y - closestY;
+
+	// INFO: Flag to check if the colliders have collided
+	bool hasCollided = false;
+
+	// INFO: Check if the distance between the circle and closest x and y values is less than the circle's radius
+	if ((dx * dx) + (dy * dy) < cRadius * cRadius)
+	{
+		hasCollided = true;
+	}
+
+	// INFO: Handle the collision response
+	HandleCollisionResponse(c, b, hasCollided);
+}
+
+void CollisionHandler::HandleCollisionResponse(std::shared_ptr<Collider> c1, std::shared_ptr<Collider> c2, bool hasCollided)
+{
 }
