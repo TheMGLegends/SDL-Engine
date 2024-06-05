@@ -18,7 +18,10 @@ public:
 	/// @brief Identifies collisions between colliders
 	static void CheckCollisions();
 
-	//static void Clean();
+	/// @brief Gets called as part of the garbage collection cycle, will check each
+	/// colliders' vector of collidingColliders and remove any that no longer exist
+	static void Clean();
+
 	//inline static void AddCollider(Collider* collider) { colliders.push_back(collider); }
 	//inline static void RemoveCollider(Collider* collider) { colliders.erase(std::remove(colliders.begin(), colliders.end(), collider), colliders.end()); }
 	

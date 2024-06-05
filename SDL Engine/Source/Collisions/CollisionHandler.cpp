@@ -40,6 +40,19 @@ void CollisionHandler::CheckCollisions()
 	}
 }
 
+void CollisionHandler::Clean()
+{
+	// INFO: Goes through each collider and access their colliding colliders, removing any that no longer exist
+	for (size_t i = 0; i < colliders.size(); i++)
+	{
+		auto& collidingColliders = colliders[i]->GetCollidingColliders();
+
+		// INFO: Iterators over colliding colliders and removes any that are expired
+		collidingColliders.erase(std::remove_if(collidingColliders.begin(), collidingColliders.end(),
+			[](std::weak_ptr<Collider> c) { return c.expired(); }), collidingColliders.end());
+	}
+}
+
 void CollisionHandler::CircleCircleCollision(std::shared_ptr<CircleCollider> c1, std::shared_ptr<CircleCollider> c2)
 {
 	// INFO: Measure to ensure that the colliders are not null

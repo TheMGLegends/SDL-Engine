@@ -51,6 +51,8 @@ public:
 	inline void AddCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.push_back(c); }
 	inline void RemoveCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.erase(std::remove(collidingColliders.begin(), collidingColliders.end(), c), collidingColliders.end()); }
 
+	inline std::vector<std::weak_ptr<Collider>>& GetCollidingColliders() { return collidingColliders; }
+
 	/*
 	inline std::function<void(Collider*)> GetCollisionEnterResponse() const { return collisionEnterResponse; }
 	inline std::function<void(Collider*)> GetCollisionStayResponse() const { return collisionStayResponse; }
