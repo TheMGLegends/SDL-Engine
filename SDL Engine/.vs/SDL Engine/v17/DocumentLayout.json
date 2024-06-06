@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Collisions\\CollisionHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Collisions\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Collisions\\Collider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Collisions\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Source\\Collisions\\CollisionHandler.h",
               "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\CollisionHandler.h",
               "RelativeToolTip": "Source\\Collisions\\CollisionHandler.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAQAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-04T08:49:55.267Z",
               "EditorCaption": ""
@@ -53,33 +53,33 @@
               "RelativeDocumentMoniker": "Source\\Collisions\\CollisionHandler.cpp",
               "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\CollisionHandler.cpp",
               "RelativeToolTip": "Source\\Collisions\\CollisionHandler.cpp",
-              "ViewState": "AQIAABwAAAAAAAAAAAAnwCgAAAABAAAA",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAswMEAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-04T08:50:06.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Collider.h",
               "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.h",
               "RelativeDocumentMoniker": "Source\\Collisions\\Collider.h",
               "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.h",
               "RelativeToolTip": "Source\\Collisions\\Collider.h",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACwAAAAXAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwDQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-04T08:48:43.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Collider.cpp",
               "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.cpp",
               "RelativeDocumentMoniker": "Source\\Collisions\\Collider.cpp",
               "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Collisions\\Collider.cpp",
               "RelativeToolTip": "Source\\Collisions\\Collider.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAnwBEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-04T09:30:30.102Z",
               "EditorCaption": ""

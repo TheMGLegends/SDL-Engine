@@ -47,9 +47,19 @@ void CollisionHandler::Clean()
 	{
 		auto& collidingColliders = colliders[i]->GetCollidingColliders();
 
-		// INFO: Iterators over colliding colliders and removes any that are expired
-		collidingColliders.erase(std::remove_if(collidingColliders.begin(), collidingColliders.end(),
-			[](std::weak_ptr<Collider> c) { return c.expired(); }), collidingColliders.end());
+		// INFO: Iterators over colliding colliders and removes any that are expired,
+		// uses a lambda expression to check each colliders' expired status and moves
+		// them to the end of the vector if they are expired, then erases them at the end
+		collidingColliders.erase(
+			std::remove_if(
+				collidingColliders.begin(), 
+				collidingColliders.end(),
+				[](std::weak_ptr<Collider> c) { 
+					return c.expired(); 
+				}
+			), 
+			collidingColliders.end()
+		);
 	}
 }
 
@@ -200,4 +210,54 @@ void CollisionHandler::CircleBoxCollision(std::shared_ptr<CircleCollider> c, std
 
 void CollisionHandler::HandleCollisionResponse(std::shared_ptr<Collider> c1, std::shared_ptr<Collider> c2, bool hasCollided)
 {
+	if (hasCollided)
+	{
+		// INFO: C1 Checks
+		if (c2->ContainsCollidingCollider(c1))
+		{
+			// INFO: Given that c2 contains c1, we know that c1 is staying in contact with c2
+			c1->GetCollisionStayResponse()(c2);
+		}
+		else
+		{
+			// INFO: Given that the two colliders are colliding, but c2 does not contain c1,
+			// we know that c1 has just collided with c2
+			c2->AddCollidingCollider(c1);
+			c1->GetCollisionEnterResponse()(c2);
+		}
+
+		// INFO: C2 Checks
+		if (c1->ContainsCollidingCollider(c2))
+		{
+			// INFO: Given that c1 contains c2, we know that c2 is staying in contact with c1
+			c2->GetCollisionStayResponse()(c1);
+		}
+		else
+		{
+			// INFO: Given that the two colliders are colliding, but c1 does not contain c2,
+			// we know that c2 has just collided with c1
+			c1->AddCollidingCollider(c2);
+			c2->GetCollisionEnterResponse()(c1);
+		}
+	}
+	else
+	{
+		// INFO: C1 Checks
+		if (c2->ContainsCollidingCollider(c1))
+		{
+			// INFO: Given that the two colliders are NOT colliding, yet c2 contains c1, we know 
+			// that c1 has just stopped colliding with c2
+			c2->RemoveCollidingCollider(c1);
+			c1->GetCollisionExitResponse()(c2);
+		}
+
+		// INFO: C2 Checks
+		if (c1->ContainsCollidingCollider(c2))
+		{
+			// INFO: Given that the two colliders are NOT colliding, yet c1 contains c2, we know 
+			// that c2 has just stopped colliding with c1
+			c1->RemoveCollidingCollider(c2);
+			c2->GetCollisionExitResponse()(c1);
+		}
+	}
 }

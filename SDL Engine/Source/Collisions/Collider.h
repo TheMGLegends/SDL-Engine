@@ -48,8 +48,9 @@ public:
 	inline void SetOffset(Vector2 _offset) { offset = _offset; }
 	inline Vector2 GetOffset() const { return offset; }
 
-	inline void AddCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.push_back(c); }
-	inline void RemoveCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.erase(std::remove(collidingColliders.begin(), collidingColliders.end(), c), collidingColliders.end()); }
+	inline void AddCollidingCollider(std::shared_ptr<Collider> c) { collidingColliders.push_back(std::weak_ptr<Collider>(c)); }
+	void RemoveCollidingCollider(std::shared_ptr<Collider> c);
+	bool ContainsCollidingCollider(std::shared_ptr<Collider> c);
 
 	inline std::vector<std::weak_ptr<Collider>>& GetCollidingColliders() { return collidingColliders; }
 

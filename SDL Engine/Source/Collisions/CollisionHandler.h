@@ -32,6 +32,7 @@ private:
 	//static void CircleCircleCollision(CircleCollider* c1, CircleCollider* c2);
 	//static void BoxBoxCollision(BoxCollider* b1, BoxCollider* b2);
 	//static void CircleBoxCollision(CircleCollider* c, BoxCollider* b);
+	//static void HandleCollisionResponse(Collider* c1, Collider* c2, bool hasCollided);
 
 	static void CircleCircleCollision(std::shared_ptr<CircleCollider> c1, std::shared_ptr<CircleCollider> c2);
 	static void BoxBoxCollision(std::shared_ptr<BoxCollider> b1, std::shared_ptr<BoxCollider> b2);
