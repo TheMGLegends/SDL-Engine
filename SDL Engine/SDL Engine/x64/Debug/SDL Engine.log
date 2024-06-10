@@ -1,4 +1,9 @@
-﻿  Collider.cpp
+﻿  PhysicsHandler.cpp
+  Rigidbody.cpp
+  CircleCollider.cpp
+  BoxCollider.cpp
+  CollisionHandler.cpp
+  Collider.cpp
   Maths.cpp
   GameObject.cpp
   main.cpp

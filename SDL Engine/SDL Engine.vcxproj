@@ -133,6 +133,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Physics\PhysicsHandler.cpp" />
+    <ClCompile Include="Source\Physics\Rigidbody.cpp" />
     <ClCompile Include="Source\Collisions\CircleCollider.cpp" />
     <ClCompile Include="Source\Collisions\BoxCollider.cpp" />
     <ClCompile Include="Source\Collisions\CollisionHandler.cpp" />
@@ -145,6 +147,9 @@
     <ClCompile Include="Source\Mathematics\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Generics\Globals.h" />
+    <ClInclude Include="Source\Physics\PhysicsHandler.h" />
+    <ClInclude Include="Source\Physics\Rigidbody.h" />
     <ClInclude Include="Source\Collisions\CircleCollider.h" />
     <ClInclude Include="Source\Collisions\BoxCollider.h" />
     <ClInclude Include="Source\Collisions\CollisionHandler.h" />

@@ -7,7 +7,7 @@
 #include <functional>
 #include <vector>
 
-/// @brief Enum class represents the different types of colliders
+/// @brief Enum class that represents the different types of colliders
 enum class ColliderType
 {
 	None = 0,

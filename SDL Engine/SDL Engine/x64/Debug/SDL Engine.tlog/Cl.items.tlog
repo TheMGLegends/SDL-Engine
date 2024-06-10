@@ -1,3 +1,8 @@
+B:\University Projects\SDL-Engine\SDL Engine\Source\Physics\PhysicsHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\PhysicsHandler.obj
+B:\University Projects\SDL-Engine\SDL Engine\Source\Physics\Rigidbody.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Rigidbody.obj
+B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\CircleCollider.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\CircleCollider.obj
+B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\BoxCollider.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\BoxCollider.obj
+B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\CollisionHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\CollisionHandler.obj
 B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\Collider.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Collider.obj
 B:\University Projects\SDL-Engine\SDL Engine\Source\Mathematics\Maths.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Maths.obj
 B:\University Projects\SDL-Engine\SDL Engine\Source\GameObject\GameObject.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\GameObject.obj
