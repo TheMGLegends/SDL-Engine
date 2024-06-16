@@ -133,6 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Input\InputHandler.cpp" />
     <ClCompile Include="Source\Physics\PhysicsHandler.cpp" />
     <ClCompile Include="Source\Physics\Rigidbody.cpp" />
     <ClCompile Include="Source\Collisions\CircleCollider.cpp" />
@@ -147,6 +148,8 @@
     <ClCompile Include="Source\Mathematics\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Debug\MemoryLeakDetector.h" />
+    <ClInclude Include="Source\Input\InputHandler.h" />
     <ClInclude Include="Source\Generics\Globals.h" />
     <ClInclude Include="Source\Physics\PhysicsHandler.h" />
     <ClInclude Include="Source\Physics\Rigidbody.h" />
