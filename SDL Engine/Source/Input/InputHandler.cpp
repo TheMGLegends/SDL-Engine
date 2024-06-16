@@ -9,7 +9,7 @@ int InputHandler::keyLength = 0;
 SDL_Event InputHandler::inputEvent{};
 
 // INFO: Keybinding Members Extension
-std::unordered_map<SDL_Keycode, std::function<void()>> InputHandler::keyBindings{};
+std::unordered_map<SDL_Keycode, KeybindData> InputHandler::keyBindings{};
 
 void InputHandler::Initialize()
 {
@@ -29,12 +29,32 @@ void InputHandler::HandleInput()
 	// so that events current and previous events can be compared
 	std::memcpy(previousKeyboardState, KEYBOARD_STATE, keyLength);
 
-	// INFO: Keybinding Extension (Currently only supports GetKey, not GetKeyDown or GetKeyUp)
+	// INFO: Keybinding Extension (Supports GetKey, GetKeyDown, GetKeyUp)
 	for (auto& keyBinding : keyBindings)
 	{
-		if (GetKey(keyBinding.first))
+		switch (keyBinding.second.keyState)
 		{
-			keyBinding.second();
+		case KeyState::GetKey:
+			if (GetKey(keyBinding.first))
+			{
+				keyBinding.second.action();
+			}
+			break;
+		case KeyState::GetKeyDown:
+			if (GetKeyDown(keyBinding.first))
+			{
+				keyBinding.second.action();
+			}
+			break;
+		case KeyState::GetKeyUp:
+			if (GetKeyUp(keyBinding.first))
+			{
+				keyBinding.second.action();
+			}
+			break;
+		case KeyState::None:
+		default:
+			break;
 		}
 	}
 
