@@ -19,9 +19,12 @@ void PhysicsHandler::UpdateRigidbodies(float dt)
 
 		rb->velocity += rb->acceleration * dt;
 
-		// INFO: Clamp the velocity to the maximum velocity in both directions
-		rb->velocity.X = Maths::Clamp(rb->velocity.X, -Globals::Physics::MAX_VELOCITY.X, Globals::Physics::MAX_VELOCITY.X);
-		rb->velocity.Y = Maths::Clamp(rb->velocity.Y, -Globals::Physics::MAX_VELOCITY.Y, Globals::Physics::MAX_VELOCITY.Y);
+		// INFO: Clamp the velocity to the maximum velocity in both directions granted that the maximum velocity is not 0.0f
+		if (Globals::Physics::MAX_VELOCITY.X != 0.0f)
+			rb->velocity.X = Maths::Clamp(rb->velocity.X, -Globals::Physics::MAX_VELOCITY.X, Globals::Physics::MAX_VELOCITY.X);
+
+		if (Globals::Physics::MAX_VELOCITY.Y != 0.0f)
+			rb->velocity.Y = Maths::Clamp(rb->velocity.Y, -Globals::Physics::MAX_VELOCITY.Y, Globals::Physics::MAX_VELOCITY.Y);
 
 		rb->displacement = rb->velocity * dt;
 	}

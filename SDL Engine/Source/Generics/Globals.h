@@ -5,6 +5,8 @@ namespace Globals
 	namespace Physics
 	{
 		const float DEFAULT_GRAVITY = 9.81f;
-		const Vector2 MAX_VELOCITY = Vector2(1.0f, 1.0f);
+
+		// INFO: Granted that the maximum velocity is 0.0f, the velocity will not be clamped
+		const Vector2 MAX_VELOCITY = Vector2(0.0f, 0.0f);
 	}
 }
