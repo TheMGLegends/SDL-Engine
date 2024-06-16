@@ -22,11 +22,11 @@ public:
 	/// colliders' vector of collidingColliders and remove any that no longer exist
 	static void Clean();
 
-	//inline static void AddCollider(Collider* collider) { colliders.push_back(collider); }
-	//inline static void RemoveCollider(Collider* collider) { colliders.erase(std::remove(colliders.begin(), colliders.end(), collider), colliders.end()); }
+	//static inline void AddCollider(Collider* collider) { colliders.push_back(collider); }
+	//static inline void RemoveCollider(Collider* collider) { colliders.erase(std::remove(colliders.begin(), colliders.end(), collider), colliders.end()); }
 	
-	inline static void AddCollider(std::shared_ptr<Collider> collider) { colliders.push_back(collider); }
-	inline static void RemoveCollider(std::shared_ptr<Collider> collider) { colliders.erase(std::remove(colliders.begin(), colliders.end(), collider), colliders.end()); }
+	static inline void AddCollider(std::shared_ptr<Collider> collider) { colliders.push_back(collider); }
+	static inline void RemoveCollider(std::shared_ptr<Collider> collider) { colliders.erase(std::remove(colliders.begin(), colliders.end(), collider), colliders.end()); }
 
 private:
 	//static void CircleCircleCollision(CircleCollider* c1, CircleCollider* c2);
