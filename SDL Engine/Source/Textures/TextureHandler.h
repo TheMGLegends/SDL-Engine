@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Mathematics/Vector2.h"
+
 #include <SDL.h>
 
 #include <memory>
@@ -40,7 +42,46 @@ private:
 	static int textureCount;
 
 public:
-	static Texture LoadTexture(const char* FILEPATH);
+	static void LoadTexture(const char* FILEPATH, Texture& texture, SDL_Renderer* renderer);
+
+#pragma region DrawStaticMethods
+	/// @brief Useful for drawing things that do not move in the game world e.g. (UI Elements)
+	static void DrawStatic(Texture texture, SDL_Renderer* renderer, Vector2 position, int width, 
+						   int height, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
+	
+	/// @brief Useful for drawing things that do not move in the game world e.g. (UI Elements)
+	static void DrawStatic(Texture texture, SDL_Renderer* renderer, int x, int y, int width, 
+						   int height, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
+#pragma endregion
+
+#pragma region DrawDynamicMethods
+	/// @brief Useful for drawing things that move in the game world but aren't animated e.g. (Backgrounds, Platforms)
+	/// @param scrollingSpeed The speed at which the texture scrolls
+	static void DrawDynamic(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ Vector2 position, int width, 
+							int height, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
+	
+	/// @brief Useful for drawing things that move in the game world but aren't animated e.g. (Backgrounds, Platforms)
+	/// @param scrollingSpeed The speed at which the texture scrolls
+	static void DrawDynamic(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ int x, int y, int width, 
+							int height, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
+#pragma endregion
+
+#pragma region DrawAnimationMethods
+	/// @brief Useful for drawing things that move in the game world and are animated e.g. (Player, Enemies)
+	/// @param row The row of the sprite sheet
+	/// @param frame The frame of the sprite sheet
+	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ Vector2 position, int width, int height, 
+							  int row = 0, int frame = 0, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
+	
+	/// @brief Useful for drawing things that move in the game world and are animated e.g. (Player, Enemies)
+	/// @param row The row of the sprite sheet
+	/// @param frame The frame of the sprite sheet
+	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ int x, int y, int width, int height, 
+							  int row = 0, int frame = 0, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
+#pragma endregion
+
+private:
+	static bool TextureExists(Texture texture);
 
 private:
 	TextureHandler() = delete;
