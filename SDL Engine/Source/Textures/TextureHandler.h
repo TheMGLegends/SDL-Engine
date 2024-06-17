@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../Viewing/Camera.h"
 #include "../Mathematics/Vector2.h"
 
 #include <SDL.h>
@@ -57,12 +58,12 @@ public:
 #pragma region DrawDynamicMethods
 	/// @brief Useful for drawing things that move in the game world but aren't animated e.g. (Backgrounds, Platforms)
 	/// @param scrollingSpeed The speed at which the texture scrolls
-	static void DrawDynamic(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ Vector2 position, int width, 
+	static void DrawDynamic(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, Vector2 position, int width, 
 							int height, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
 	
 	/// @brief Useful for drawing things that move in the game world but aren't animated e.g. (Backgrounds, Platforms)
 	/// @param scrollingSpeed The speed at which the texture scrolls
-	static void DrawDynamic(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ int x, int y, int width, 
+	static void DrawDynamic(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, int x, int y, int width,
 							int height, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
 #pragma endregion
 
@@ -70,13 +71,13 @@ public:
 	/// @brief Useful for drawing things that move in the game world and are animated e.g. (Player, Enemies)
 	/// @param row The row of the sprite sheet
 	/// @param frame The frame of the sprite sheet
-	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ Vector2 position, int width, int height, 
+	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, Vector2 position, int width, int height,
 							  int row = 0, int frame = 0, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
 	
 	/// @brief Useful for drawing things that move in the game world and are animated e.g. (Player, Enemies)
 	/// @param row The row of the sprite sheet
 	/// @param frame The frame of the sprite sheet
-	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, /*CAMERA : const Camera&,*/ int x, int y, int width, int height, 
+	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, int x, int y, int width, int height,
 							  int row = 0, int frame = 0, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
 #pragma endregion
 
