@@ -93,6 +93,20 @@ void TextureHandler::DrawAnimation(Texture texture, SDL_Renderer* renderer, cons
 	DrawAnimation(texture, renderer, CAMERA, Vector2(x, y), width, height, row, frame, scrollingSpeed, scale, flip);
 }
 
+void TextureHandler::Clean()
+{
+	for (auto& texture : textureLib)
+	{
+		SDL_DestroyTexture(texture.second);
+	}
+
+	textureLib.clear();
+	textureCount = 0;
+
+	if (!textureLib.empty())
+		std::cout << "Failed to clean the texture library." << std::endl;
+}
+
 bool TextureHandler::TextureExists(Texture texture)
 {
 	if (textureLib.find(texture) == textureLib.end())
@@ -100,9 +114,5 @@ bool TextureHandler::TextureExists(Texture texture)
 		std::cout << "Texture not found in the texture library." << std::endl;
 		return false;
 	}
-	else
-	{
-		std::cout << "Texture found in the texture library." << std::endl;
-		return true;
-	}
+	return true;
 }

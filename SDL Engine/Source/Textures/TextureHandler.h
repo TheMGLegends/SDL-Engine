@@ -5,7 +5,6 @@
 
 #include <SDL.h>
 
-#include <memory>
 #include <unordered_map>
 
 /// @brief Struct that holds the ID of a texture so it can be accessed later
@@ -27,7 +26,7 @@ public:
 	inline bool operator==(const Texture& other) const { return id == other.id; }
 };
 
-// Specialize std::hash for Texture
+/// @brief Specialize std::hash for Texture
 template<>
 struct std::hash<Texture> {
 	std::size_t operator()(const Texture& texture) const {
@@ -80,6 +79,8 @@ public:
 	static void DrawAnimation(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, int x, int y, int width, int height,
 							  int row = 0, int frame = 0, float scrollingSpeed = 1.0f, int scale = 1, SDL_RendererFlip flip = SDL_FLIP_NONE);
 #pragma endregion
+
+	static void Clean();
 
 private:
 	static bool TextureExists(Texture texture);
