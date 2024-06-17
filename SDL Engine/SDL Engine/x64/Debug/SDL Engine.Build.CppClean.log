@@ -1,5 +1,6 @@
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\vc143.pdb
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\vc143.idb
+b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\texturehandler.obj
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\transform.obj
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\vector2.obj
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\timehandler.obj
@@ -12,15 +13,16 @@ b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\boxcollider.ob
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\circlecollider.obj
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\rigidbody.obj
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\physicshandler.obj
+b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\inputhandler.obj
+b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\mouse.obj
+b:\university projects\sdl-engine\sdl engine\x64\debug\sdl engine.exe
 b:\university projects\sdl-engine\sdl engine\x64\debug\sdl engine.pdb
+b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.ilk
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\cl.command.1.tlog
+b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\cl.items.tlog
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\cl.read.1.tlog
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\cl.write.1.tlog
-b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link-cvtres.read.1.tlog
-b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link-cvtres.write.1.tlog
-b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link-rc.read.1.tlog
-b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link-rc.write.1.tlog
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link.command.1.tlog
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link.read.1.tlog
-b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link.read.2.tlog
+b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link.secondary.1.tlog
 b:\university projects\sdl-engine\sdl engine\sdl engine\x64\debug\sdl engine.tlog\link.write.1.tlog

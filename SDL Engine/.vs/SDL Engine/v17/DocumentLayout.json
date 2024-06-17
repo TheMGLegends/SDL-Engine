@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "B:\\University Projects\\SDL-Engine\\SDL Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\InputHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Input\\InputHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Textures\\TextureHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\InputHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Input\\InputHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\Mouse.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Input\\Mouse.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\Mouse.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Input\\Mouse.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Textures\\TextureHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,71 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mouse.h",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\Mouse.h",
-              "RelativeDocumentMoniker": "Source\\Input\\Mouse.h",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\Mouse.h",
-              "RelativeToolTip": "Source\\Input\\Mouse.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-16T18:39:04.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Mouse.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\Mouse.cpp",
-              "RelativeDocumentMoniker": "Source\\Input\\Mouse.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\Mouse.cpp",
-              "RelativeToolTip": "Source\\Input\\Mouse.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-16T18:39:10.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
-              "RelativeDocumentMoniker": "Source\\main.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
-              "RelativeToolTip": "Source\\main.cpp",
-              "ViewState": "AQIAABsAAAAAAAAAAABRwB4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-21T14:34:22.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InputHandler.h",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\InputHandler.h",
-              "RelativeDocumentMoniker": "Source\\Input\\InputHandler.h",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\InputHandler.h",
-              "RelativeToolTip": "Source\\Input\\InputHandler.h",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADYAAABYAAAA",
+              "Title": "TextureHandler.h",
+              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.h",
+              "RelativeDocumentMoniker": "Source\\Textures\\TextureHandler.h",
+              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.h",
+              "RelativeToolTip": "Source\\Textures\\TextureHandler.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-16T11:09:02.46Z",
+              "WhenOpened": "2024-06-17T08:42:18.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InputHandler.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\InputHandler.cpp",
-              "RelativeDocumentMoniker": "Source\\Input\\InputHandler.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Input\\InputHandler.cpp",
-              "RelativeToolTip": "Source\\Input\\InputHandler.cpp",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAIoAAAAiAAAA",
+              "Title": "TextureHandler.cpp",
+              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.cpp",
+              "RelativeDocumentMoniker": "Source\\Textures\\TextureHandler.cpp",
+              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.cpp",
+              "RelativeToolTip": "Source\\Textures\\TextureHandler.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-16T11:09:13.573Z",
+              "WhenOpened": "2024-06-17T08:42:28.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
+              "RelativeDocumentMoniker": "Source\\main.cpp",
+              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
+              "RelativeToolTip": "Source\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-21T14:34:22.173Z",
               "EditorCaption": ""
             }
           ]

@@ -23,6 +23,7 @@ struct BindData
 	std::function<void()> action;
 	ButtonState buttonState;
 
+	BindData() : action(nullptr), buttonState(ButtonState::None) {}
 	BindData(std::function<void()> _action, ButtonState _buttonState) : action(_action), buttonState(_buttonState) {}
 };
 
@@ -47,12 +48,12 @@ public:
 #pragma region KeybindingExtension
 // INFO: Keybinding Members & Methods Extension (Keyboard)
 private:
-	static std::unordered_map<SDL_Keycode, BindData> keyBindings;
+	static std::unordered_map<SDL_Keycode, BindData> keyBindingsLib;
 
 public:
-	static inline void BindKeyAction(SDL_Keycode keyCode, BindData bindData) { keyBindings[keyCode] = bindData; }
-	static inline void ClearKeyBindings() { keyBindings.clear(); }
-	static inline void ClearKeyBinding(SDL_Keycode keyCode) { keyBindings.erase(keyCode); }
+	static inline void BindKeyAction(SDL_Keycode keyCode, BindData bindData) { keyBindingsLib[keyCode] = bindData; }
+	static inline void ClearKeyBindings() { keyBindingsLib.clear(); }
+	static inline void ClearKeyBinding(SDL_Keycode keyCode) { keyBindingsLib.erase(keyCode); }
 #pragma endregion
 
 #pragma region GenericMouseInput
@@ -71,12 +72,12 @@ public:
 #pragma region ButtonBindingExtension
 // INFO: Button binding Members & Methods Extension (Mouse)
 private:
-	static std::unordered_map<Uint32, BindData> mouseButtonBindings;
+	static std::unordered_map<Uint32, BindData> mouseButtonBindingsLib;
 
 public:
-	static inline void BindMouseButtonAction(Uint32 mouseButtonFlags, BindData bindData) { mouseButtonBindings[mouseButtonFlags] = bindData; }
-	static inline void ClearMouseButtonBindings() { mouseButtonBindings.clear(); }
-	static inline void ClearMouseButtonBinding(Uint32 mouseButtonFlags) { mouseButtonBindings.erase(mouseButtonFlags); }
+	static inline void BindMouseButtonAction(Uint32 mouseButtonFlags, BindData bindData) { mouseButtonBindingsLib[mouseButtonFlags] = bindData; }
+	static inline void ClearMouseButtonBindings() { mouseButtonBindingsLib.clear(); }
+	static inline void ClearMouseButtonBinding(Uint32 mouseButtonFlags) { mouseButtonBindingsLib.erase(mouseButtonFlags); }
 	static inline Mouse GetMouse() { return mouse; }
 #pragma endregion
 

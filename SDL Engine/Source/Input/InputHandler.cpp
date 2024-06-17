@@ -9,7 +9,7 @@ int InputHandler::keyLength = 0;
 SDL_Event InputHandler::inputEvent{};
 
 // INFO: Keybinding Members Extension
-std::unordered_map<SDL_Keycode, BindData> InputHandler::keyBindings{};
+std::unordered_map<SDL_Keycode, BindData> InputHandler::keyBindingsLib{};
 
 // INFO: Generic Members for Mouse Input Handling
 Mouse InputHandler::mouse{};
@@ -17,7 +17,7 @@ Uint32 InputHandler::MOUSE_STATE = 0;
 Uint32 InputHandler::previousMouseState = 0;
 
 // INFO: Button binding Members Extension
-std::unordered_map<Uint32, BindData> InputHandler::mouseButtonBindings{};
+std::unordered_map<Uint32, BindData> InputHandler::mouseButtonBindingsLib{};
 
 void InputHandler::Initialize()
 {
@@ -50,7 +50,7 @@ void InputHandler::HandleInput()
 	MOUSE_STATE = SDL_GetMouseState(&mouse.mouseInfo.x, &mouse.mouseInfo.y);
 
 	// INFO: Keybinding Extension (Supports GetKey, GetKeyDown, GetKeyUp)
-	for (auto& keyBinding : keyBindings)
+	for (auto& keyBinding : keyBindingsLib)
 	{
 		switch (keyBinding.second.buttonState)
 		{
@@ -79,7 +79,7 @@ void InputHandler::HandleInput()
 	}
 
 	// INFO: Mouse Button Binding Extension (Supports GetMouseButton, GetMouseButtonDown, GetMouseButtonUp)
-	for (auto& mouseButtonBinding : mouseButtonBindings)
+	for (auto& mouseButtonBinding : mouseButtonBindingsLib)
 	{
 		switch (mouseButtonBinding.second.buttonState)
 		{
@@ -134,8 +134,8 @@ void InputHandler::Clean()
 void InputHandler::ClearBindings()
 {
 	// INFO: Clear all key bindings
-	keyBindings.clear();
+	keyBindingsLib.clear();
 
 	// INFO: Clear all mouse bindings
-    mouseButtonBindings.clear();
+    mouseButtonBindingsLib.clear();
 }
