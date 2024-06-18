@@ -9,7 +9,7 @@ void Camera::Update()
 		position = target.lock()->position;
 
 		// INFO: Ensure the target remains in the centre of the camera view
-		cameraView.x = position.X - cameraView.w / 2.0f;
-		cameraView.y = position.Y - cameraView.h / 2.0f;
+		cameraView.x = static_cast<int>(position.X - cameraView.w / 2.0f);
+		cameraView.y = static_cast<int>(position.Y - cameraView.h / 2.0f);
 	}
 }

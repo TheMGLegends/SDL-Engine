@@ -2,15 +2,17 @@
 
 #include <iostream>
 
-#include "SDL.h"
-#include "SDL_image.h"
-#include "SDL_mixer.h"
-#include "SDL_ttf.h"
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_mixer.h>
+#include <SDL_ttf.h>
 
 #include "Time/TimeHandler.h"
 #include "Mathematics/Maths.h"
 #include "Mathematics/Vector2.h"
 #include "Mathematics/Transform.h"
+#include "Debugging/Debug.h"
+#include "Generics/Templates.h"
 
 int main(int argc, char* argv[])
 {
@@ -154,6 +156,27 @@ int main(int argc, char* argv[])
 	t2.Up();
 	t2.Right();
 	*/
+
+	// INFO: Color Command Line Testing
+	/*
+	//std::cout << "\033[1;31;4m"; // set color to underline red
+	//std::cout << "\033[1;33;4m"; // set color to underline yellow
+	std::cout << "Hello, world!" << std::endl;
+	std::cout << "\033[0m"; // reset color to default
+	*/
+
+	// INFO: Debug Testing
+	/*
+	*/
+	Vector2 Vect(5.0f, 10.0f);
+	int Int = 5;
+	float Float = 5.0f;
+	Debug::Log(Vect);
+	Debug::Log("Hello: " + ToString(Vect) + " World!");
+	Debug::Log(std::to_string(Int));
+	Debug::Log(Maths::FloatToString(Float));
+	Debug::LogWarning(ToString(Vect) + " is bad.");
+	Debug::LogError(Maths::FloatToString(Float, 5) + " is breaking the game.");
 
 	(void)getchar();
 

@@ -1,5 +1,9 @@
 #pragma once
 
+#include "Maths.h"
+
+#include <sstream>
+
 struct Vector2
 {
 public:
@@ -50,5 +54,11 @@ public:
 
 	inline bool operator==(const Vector2& V) const { return X == V.X && Y == V.Y;}
 	inline bool operator!=(const Vector2& V) const { return X != V.X || Y != V.Y; }
+
+	/// @brief User defined conversion to string from Vector2
+	inline operator std::string() const { return "(X = " + Maths::FloatToString(X, 1) + ", Y = " + Maths::FloatToString(Y, 1) + ")"; }
+	
+	/// @brief Ensures things like this: Debug::Log("My Vector: " + ToString(Vect)); work
+	friend inline std::ostream& operator<<(std::ostream& os, const Vector2& V) { return os << std::string(V); }
 };
 

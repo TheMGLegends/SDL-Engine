@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "B:\\University Projects\\SDL-Engine\\SDL Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Audio\\AudioHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Audio\\AudioHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Audio\\AudioHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Audio\\AudioHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Textures\\TextureHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Textures\\TextureHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Debugging\\Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Debugging\\Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Debugging\\Debug.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Debugging\\Debug.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,65 +26,39 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AudioHandler.h",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Audio\\AudioHandler.h",
-              "RelativeDocumentMoniker": "Source\\Audio\\AudioHandler.h",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Audio\\AudioHandler.h",
-              "RelativeToolTip": "Source\\Audio\\AudioHandler.h",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAA1AAAA",
+              "DocumentIndex": 2,
+              "Title": "Debug.h",
+              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Debugging\\Debug.h",
+              "RelativeDocumentMoniker": "Source\\Debugging\\Debug.h",
+              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Debugging\\Debug.h",
+              "RelativeToolTip": "Source\\Debugging\\Debug.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-17T14:14:37.887Z",
+              "WhenOpened": "2024-06-18T13:28:30.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AudioHandler.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Audio\\AudioHandler.cpp",
-              "RelativeDocumentMoniker": "Source\\Audio\\AudioHandler.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Audio\\AudioHandler.cpp",
-              "RelativeToolTip": "Source\\Audio\\AudioHandler.cpp",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAnwFMAAAACAAAA",
+              "Title": "Debug.cpp",
+              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Debugging\\Debug.cpp",
+              "RelativeDocumentMoniker": "Source\\Debugging\\Debug.cpp",
+              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Debugging\\Debug.cpp",
+              "RelativeToolTip": "Source\\Debugging\\Debug.cpp",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAC4AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-17T14:14:42.299Z",
+              "WhenOpened": "2024-06-18T13:28:47.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TextureHandler.h",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.h",
-              "RelativeDocumentMoniker": "Source\\Textures\\TextureHandler.h",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.h",
-              "RelativeToolTip": "Source\\Textures\\TextureHandler.h",
-              "ViewState": "AQIAADsAAAAAAAAAAAAnwFUAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-17T08:42:18.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TextureHandler.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.cpp",
-              "RelativeDocumentMoniker": "Source\\Textures\\TextureHandler.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Textures\\TextureHandler.cpp",
-              "RelativeToolTip": "Source\\Textures\\TextureHandler.cpp",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAYwGkAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-17T08:42:28.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
               "RelativeDocumentMoniker": "Source\\main.cpp",
               "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
               "RelativeToolTip": "Source\\main.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAABRwAkAAAAdAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAKsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-21T14:34:22.173Z",
               "EditorCaption": ""

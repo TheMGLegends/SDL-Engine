@@ -135,7 +135,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Debugging\Debug.cpp" />
     <ClCompile Include="Source\Audio\AudioHandler.cpp" />
+    <ClCompile Include="Source\Generics\Color.cpp" />
     <ClCompile Include="Source\Viewing\Camera.cpp" />
     <ClCompile Include="Source\Input\Mouse.cpp" />
     <ClCompile Include="Source\Input\InputHandler.cpp" />
@@ -154,10 +156,13 @@
     <ClCompile Include="Source\Textures\TextureHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Generics\Color.h" />
+    <ClInclude Include="Source\Debugging\Debug.h" />
     <ClInclude Include="Source\Audio\AudioHandler.h" />
+    <ClInclude Include="Source\Generics\Templates.h" />
     <ClInclude Include="Source\Viewing\Camera.h" />
     <ClInclude Include="Source\Input\Mouse.h" />
-    <ClInclude Include="Source\Debug\MemoryLeakDetector.h" />
+    <ClInclude Include="Source\Debugging\MemoryLeakDetector.h" />
     <ClInclude Include="Source\Input\InputHandler.h" />
     <ClInclude Include="Source\Generics\Globals.h" />
     <ClInclude Include="Source\Physics\PhysicsHandler.h" />

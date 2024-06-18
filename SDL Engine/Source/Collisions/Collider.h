@@ -45,6 +45,8 @@ public:
 	void UpdatePosition();
 	inline Vector2 GetPosition() const { return position; }
 
+	virtual Vector2 GetCentrePosition() const = 0;
+
 	inline void SetOffset(Vector2 _offset) { offset = _offset; }
 	inline Vector2 GetOffset() const { return offset; }
 

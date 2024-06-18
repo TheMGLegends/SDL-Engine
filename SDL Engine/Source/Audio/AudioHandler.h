@@ -1,6 +1,6 @@
 #pragma once
 
-#include "SDL_mixer.h"
+#include <SDL_mixer.h>
 
 #include <unordered_map>
 

@@ -1,6 +1,6 @@
 #include "TextureHandler.h"
 
-#include "SDL_image.h"
+#include <SDL_image.h>
 
 #include <iostream>
 
@@ -43,7 +43,7 @@ void TextureHandler::DrawStatic(Texture texture, SDL_Renderer* renderer, Vector2
 	if (!TextureExists(texture))
 		return;
 
-	SDL_Rect dstRect = { position.X, position.Y, width * scale, height * scale };
+	SDL_Rect dstRect = { static_cast<int>(position.X), static_cast<int>(position.Y), width * scale, height * scale };
 
 	SDL_RenderCopyEx(renderer, textureLib[texture], nullptr, &dstRect, 0, nullptr, flip);
 }
@@ -51,7 +51,7 @@ void TextureHandler::DrawStatic(Texture texture, SDL_Renderer* renderer, Vector2
 void TextureHandler::DrawStatic(Texture texture, SDL_Renderer* renderer, int x, int y, 
 								int width, int height, int scale, SDL_RendererFlip flip)
 {
-	DrawStatic(texture, renderer, Vector2(x, y), width, height, scale, flip);
+	DrawStatic(texture, renderer, Vector2(static_cast<float>(x), static_cast<float>(y)), width, height, scale, flip);
 }
 
 void TextureHandler::DrawDynamic(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, Vector2 position,
@@ -62,7 +62,7 @@ void TextureHandler::DrawDynamic(Texture texture, SDL_Renderer* renderer, const 
 		return;
 
 	Vector2 cameraPosition = CAMERA.GetPosition() * scrollingSpeed;
-	SDL_Rect dstRect = { position.X - cameraPosition.X, position.Y - cameraPosition.Y, width * scale, height * scale};
+	SDL_Rect dstRect = { static_cast<int>(position.X - cameraPosition.X), static_cast<int>(position.Y - cameraPosition.Y), width * scale, height * scale };
 
 	SDL_RenderCopyEx(renderer, textureLib[texture], nullptr, &dstRect, 0, nullptr, flip);
 }
@@ -70,7 +70,7 @@ void TextureHandler::DrawDynamic(Texture texture, SDL_Renderer* renderer, const 
 void TextureHandler::DrawDynamic(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, int x, int y,
 								 int width, int height, float scrollingSpeed, int scale, SDL_RendererFlip flip)
 {
-	DrawDynamic(texture, renderer, CAMERA, Vector2(x, y), width, height, scrollingSpeed, scale, flip);
+	DrawDynamic(texture, renderer, CAMERA, Vector2(static_cast<float>(x), static_cast<float>(y)), width, height, scrollingSpeed, scale, flip);
 }
 
 void TextureHandler::DrawAnimation(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, Vector2 position, int width,
@@ -82,7 +82,7 @@ void TextureHandler::DrawAnimation(Texture texture, SDL_Renderer* renderer, cons
 
 	Vector2 cameraPosition = CAMERA.GetPosition() * scrollingSpeed;
 	SDL_Rect srcRect = { frame * width, row * height, width, height };
-	SDL_Rect dstRect = { position.X - cameraPosition.X, position.Y - cameraPosition.Y, width * scale, height * scale };
+	SDL_Rect dstRect = { static_cast<int>(position.X - cameraPosition.X), static_cast<int>(position.Y - cameraPosition.Y), width * scale, height * scale };
 
 	SDL_RenderCopyEx(renderer, textureLib[texture], &srcRect, &dstRect, 0, nullptr, flip);
 }
@@ -90,7 +90,7 @@ void TextureHandler::DrawAnimation(Texture texture, SDL_Renderer* renderer, cons
 void TextureHandler::DrawAnimation(Texture texture, SDL_Renderer* renderer, const Camera& CAMERA, int x, int y, int width,
 								   int height, int row, int frame, float scrollingSpeed, int scale, SDL_RendererFlip flip)
 {
-	DrawAnimation(texture, renderer, CAMERA, Vector2(x, y), width, height, row, frame, scrollingSpeed, scale, flip);
+	DrawAnimation(texture, renderer, CAMERA, Vector2(static_cast<float>(x), static_cast<float>(y)), width, height, row, frame, scrollingSpeed, scale, flip);
 }
 
 void TextureHandler::Clean()

@@ -1,6 +1,9 @@
 #include "Maths.h"
 
 #include <cmath>
+#include <ctime>
+#include <iomanip>
+#include <sstream>
 
 const float Maths::PI = 3.1415f;
 
@@ -30,6 +33,16 @@ float Maths::Clamp(float value, float min, float max)
 		return value;
 }
 
+int Maths::Clamp(int value, int min, int max)
+{
+	if (value < min)
+		return min;
+	else if (value > max)
+		return max;
+	else
+		return value;
+}
+
 float Maths::Abs(float value)
 {
 	return std::abs(value);
@@ -49,4 +62,18 @@ float Maths::Min(float value1, float value2)
 		return value2;
 	else
 		return value1; // INFO: If value1 < value2 or value1 == value2, return value1
+}
+
+int Maths::RandomRange(int min, int max)
+{
+	srand(unsigned int(time(NULL)));
+	int range = max - min + 1;
+	return min + rand() % range;
+}
+
+std::string Maths::FloatToString(float value, int precision)
+{
+	std::ostringstream stream;
+	stream << std::fixed << std::setprecision(precision) << value;
+	return stream.str();
 }
