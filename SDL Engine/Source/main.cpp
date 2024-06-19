@@ -167,7 +167,6 @@ int main(int argc, char* argv[])
 
 	// INFO: Debug Testing
 	/*
-	*/
 	Vector2 Vect(5.0f, 10.0f);
 	int Int = 5;
 	float Float = 5.0f;
@@ -177,6 +176,7 @@ int main(int argc, char* argv[])
 	Debug::Log(Maths::FloatToString(Float));
 	Debug::LogWarning(ToString(Vect) + " is bad.");
 	Debug::LogError(Maths::FloatToString(Float, 5) + " is breaking the game.");
+	*/
 
 	(void)getchar();
 
