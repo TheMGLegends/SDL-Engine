@@ -19,6 +19,7 @@ public:
 
 public:
 	Vector2(float _X = 0.0f, float _Y = 0.0f) : X(_X), Y(_Y) {}
+	Vector2(int _X = 0, int _Y = 0) : X(static_cast<float>(_X)), Y(static_cast<float>(_Y)) {}
 
 	/// @brief Normalizes the original passed in vector
 	static void Normalize(Vector2& v);
