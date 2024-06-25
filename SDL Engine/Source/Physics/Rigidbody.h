@@ -36,7 +36,7 @@ private:
 public:
 	//Rigidbody(GameObject* _owner, float _mass = 1.0f, float _localGravityScale = Globals::Physics::DEFAULT_GRAVITY, bool _bUseLocalGravity = false);
 	Rigidbody(std::shared_ptr<GameObject> _owner, float _mass = 1.0f, float _localGravityScale = Globals::Physics::DEFAULT_GRAVITY, bool _bUseLocalGravity = false);
-	~Rigidbody() override {}
+	~Rigidbody() override {};
 
 	inline void SetMass(float _mass) { mass = _mass; }
 	inline float GetMass() const { return mass; }

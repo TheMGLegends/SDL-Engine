@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Particles\Particle.cpp" />
     <ClCompile Include="Source\Animations\AnimatorHandler.cpp" />
     <ClCompile Include="Source\Animations\Animator.cpp" />
     <ClCompile Include="Source\Debugging\Debug.cpp" />
@@ -158,6 +159,7 @@
     <ClCompile Include="Source\Textures\TextureHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Particles\Particle.h" />
     <ClInclude Include="Source\Animations\AnimatorHandler.h" />
     <ClInclude Include="Source\Animations\Animator.h" />
     <ClInclude Include="Source\Audio\Audio.h" />

@@ -1,7 +1,5 @@
 // INFO: SDL TESTING PURPOSES
 
-#include <iostream>
-
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_mixer.h>
@@ -18,7 +16,7 @@ int main(int argc, char* argv[])
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING))
 	{
-		std::cout << "SDL_Init Error: " << SDL_GetError() << std::endl;
+		Debug::LogError("SDL_Init Error: " + std::string(SDL_GetError()));
 		return 1;
 	}
 
@@ -26,7 +24,7 @@ int main(int argc, char* argv[])
 
 	if (window == nullptr)
 	{
-		std::cout << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
+		Debug::LogError("SDL_CreateWindow Error: " + std::string(SDL_GetError()));
 		return 1;
 	}
 

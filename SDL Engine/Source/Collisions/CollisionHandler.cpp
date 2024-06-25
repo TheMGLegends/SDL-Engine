@@ -1,6 +1,6 @@
 #include "CollisionHandler.h"
 
-#include <iostream>
+#include "../Debugging/Debug.h"
 
 //std::vector<Collider*> CollisionHandler::colliders;
 std::vector<std::shared_ptr<Collider>> CollisionHandler::colliders;
@@ -68,7 +68,7 @@ void CollisionHandler::CircleCircleCollision(std::shared_ptr<CircleCollider> c1,
 	// INFO: Measure to ensure that the colliders are not null
 	if (c1 == nullptr || c2 == nullptr)
 	{
-		std::cout << "CollisionHandler::CircleCircleCollision: One or both colliders are null." << std::endl;
+		Debug::LogError("CollisionHandler::CircleCircleCollision: One or both colliders are null.");
 		return;
 	}	
 
@@ -101,7 +101,7 @@ void CollisionHandler::BoxBoxCollision(std::shared_ptr<BoxCollider> b1, std::sha
 	// INFO: Measure to ensure that the colliders are not null
 	if (b1 == nullptr || b2 == nullptr)
 	{
-		std::cout << "CollisionHandler::BoxBoxCollision: One or both colliders are null." << std::endl;
+		Debug::LogError("CollisionHandler::BoxBoxCollision: One or both colliders are null.");
 		return;
 	}
 
@@ -141,7 +141,7 @@ void CollisionHandler::CircleBoxCollision(std::shared_ptr<CircleCollider> c, std
 	// INFO: Measure to ensure that the colliders are not null
 	if (c == nullptr || b == nullptr)
 	{
-		std::cout << "CollisionHandler::CircleBoxCollision: One or both colliders are null." << std::endl;
+		Debug::LogWarning("CollisionHandler::CircleBoxCollision: One or both colliders are null.");
 		return;
 	}
 

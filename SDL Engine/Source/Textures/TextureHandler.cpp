@@ -2,9 +2,9 @@
 
 #include "../Viewing/Camera.h"
 
-#include <SDL_image.h>
+#include "../Debugging/Debug.h"
 
-#include <iostream>
+#include <SDL_image.h>
 
 std::unordered_map<Texture, SDL_Texture*> TextureHandler::textureLib;
 int TextureHandler::textureCount = 0;
@@ -15,7 +15,7 @@ void TextureHandler::LoadTexture(const char* FILEPATH, Texture& texture, SDL_Ren
 
 	if (sdlSurface == nullptr)
 	{
-		std::cout << "Failed to initialize Surface. SDL error: " << SDL_GetError() << std::endl;
+		Debug::LogWarning("Failed to initialize Surface. SDL error: " + std::string(SDL_GetError()));
 		return;
 	}
 
@@ -23,7 +23,7 @@ void TextureHandler::LoadTexture(const char* FILEPATH, Texture& texture, SDL_Ren
 
 	if (sdlTexture == nullptr)
 	{
-		std::cout << "Failed to initialize Texture. SDL error: " << SDL_GetError() << std::endl;
+		Debug::LogWarning("Failed to initialize Texture. SDL error: " + std::string(SDL_GetError()));
 		return;
 	}
 
@@ -100,14 +100,14 @@ void TextureHandler::Clean()
 	textureCount = 0;
 
 	if (!textureLib.empty())
-		std::cout << "Failed to clean the texture library." << std::endl;
+		Debug::LogWarning("Failed to clean the texture library.");
 }
 
 bool TextureHandler::TextureExists(Texture texture)
 {
 	if (textureLib.find(texture) == textureLib.end())
 	{
-		std::cout << "Texture not found in the texture library." << std::endl;
+		Debug::LogWarning("Texture not found in the texture library.");
 		return false;
 	}
 	return true;

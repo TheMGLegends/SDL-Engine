@@ -1,6 +1,6 @@
 #include "AudioHandler.h"
 
-#include <iostream>
+#include "../Debugging/Debug.h"
 
 std::unordered_map<Audio, Mix_Music*> AudioHandler::musicLib;
 std::unordered_map<Audio, Mix_Chunk*> AudioHandler::sfxLib;
@@ -12,7 +12,7 @@ void AudioHandler::LoadMusic(const char* FILEPATH, Audio& audio)
 
 	if (music == nullptr)
 	{
-		std::cout << "Failed to initialise music. SDL_Mix error: " << Mix_GetError() << std::endl;
+		Debug::LogWarning("Failed to initialize music with path: " + std::string(FILEPATH) + ". SDL_Mix error : " + std::string(Mix_GetError()));
 	}
 
 	// INFO: Assign the ID of the audio clip to the current audio count
@@ -30,7 +30,7 @@ void AudioHandler::LoadSFX(const char* FILEPATH, Audio& audio)
 
 	if (sfx == nullptr)
 	{
-		std::cout << "Failed to initialise sfx. SDL_Mix error: " << Mix_GetError() << std::endl;
+		Debug::LogWarning("Failed to initialize sfx with path: " + std::string(FILEPATH) + ". SDL_Mix error : " + std::string(Mix_GetError()));
 	}
 
 	// INFO: Assign the ID of the audio clip to the current audio count
@@ -50,7 +50,7 @@ void AudioHandler::PlayMusic(Audio music, int loops)
 
 	// INFO: Plays the Music
 	if (Mix_PlayMusic(musicLib[music], loops) == -1)
-		std::cout << "Failed to play music. SDL_Mix error: " << Mix_GetError() << std::endl;
+		Debug::LogWarning("Failed to play music. SDL_Mix error: " + std::string(Mix_GetError()));
 }
 
 void AudioHandler::PlaySFX(Audio sfx, int loops)
@@ -61,7 +61,7 @@ void AudioHandler::PlaySFX(Audio sfx, int loops)
 
 	// INFO: Plays the SFX
 	if (Mix_PlayChannel(-1, sfxLib[sfx], loops) == -1)
-		std::cout << "SFX could not be played. SDL_Mixer error: " << Mix_GetError() << std::endl;
+		Debug::LogWarning("Failed to play sfx. SDL_Mix error: " + std::string(Mix_GetError()));
 }
 
 void AudioHandler::SetSFXVolume(Audio sfx, int volume)
@@ -90,10 +90,10 @@ void AudioHandler::Clean()
 	audioCount = 0;
 
 	if (!musicLib.empty())
-		std::cout << "Failed to clean the music library." << std::endl;
+		Debug::LogWarning("Failed to clean the music library.");
 
 	if (!sfxLib.empty())
-		std::cout << "Failed to clean the sfx library." << std::endl;
+		Debug::LogWarning("Failed to clean the sfx library.");
 }
 
 bool AudioHandler::AudioExists(Audio audio, bool isMusic)
@@ -102,7 +102,7 @@ bool AudioHandler::AudioExists(Audio audio, bool isMusic)
 	{
 		if (musicLib.find(audio) == musicLib.end())
 		{
-			std::cout << "Audio clip not found in the music library." << std::endl;
+			Debug::LogWarning("Audio clip not found in the music library.");
 			return false;
 		}
 	}
@@ -110,7 +110,7 @@ bool AudioHandler::AudioExists(Audio audio, bool isMusic)
 	{
 		if (sfxLib.find(audio) == sfxLib.end())
 		{
-			std::cout << "Audio clip not found in the sfx library." << std::endl;
+			Debug::LogWarning("Audio clip not found in the sfx library.");
 			return false;
 		}
 	}
