@@ -15,7 +15,7 @@ void TextureHandler::LoadTexture(const char* FILEPATH, Texture& texture, SDL_Ren
 
 	if (sdlSurface == nullptr)
 	{
-		Debug::LogWarning("Failed to initialize Surface. SDL error: " + std::string(SDL_GetError()));
+		Debug::LogWarning("TextureHandler::LoadTexture: Failed to initialize Surface. SDL error: " + std::string(SDL_GetError()));
 		return;
 	}
 
@@ -23,7 +23,7 @@ void TextureHandler::LoadTexture(const char* FILEPATH, Texture& texture, SDL_Ren
 
 	if (sdlTexture == nullptr)
 	{
-		Debug::LogWarning("Failed to initialize Texture. SDL error: " + std::string(SDL_GetError()));
+		Debug::LogWarning("TextureHandler::LoadTexture: Failed to initialize Texture. SDL error: " + std::string(SDL_GetError()));
 		return;
 	}
 
@@ -100,14 +100,14 @@ void TextureHandler::Clean()
 	textureCount = 0;
 
 	if (!textureLib.empty())
-		Debug::LogWarning("Failed to clean the texture library.");
+		Debug::LogWarning("TextureHandler::Clean: Failed to clean the texture library.");
 }
 
 bool TextureHandler::TextureExists(Texture texture)
 {
 	if (textureLib.find(texture) == textureLib.end())
 	{
-		Debug::LogWarning("Texture not found in the texture library.");
+		Debug::LogWarning("TextureHandler::TextureExists: Texture not found in the texture library.");
 		return false;
 	}
 	return true;

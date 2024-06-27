@@ -18,6 +18,7 @@ public:
 	static float Max(float value1, float value2);
 	static float Min(float value1, float value2);
 	static int RandomRange(int min, int max);
+	static float RandomRange(float min, float max);
 	static std::string FloatToString(float value, int precision = 2);
 };
 

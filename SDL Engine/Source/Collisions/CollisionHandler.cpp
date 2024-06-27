@@ -141,7 +141,7 @@ void CollisionHandler::CircleBoxCollision(std::shared_ptr<CircleCollider> c, std
 	// INFO: Measure to ensure that the colliders are not null
 	if (c == nullptr || b == nullptr)
 	{
-		Debug::LogWarning("CollisionHandler::CircleBoxCollision: One or both colliders are null.");
+		Debug::LogError("CollisionHandler::CircleBoxCollision: One or both colliders are null.");
 		return;
 	}
 

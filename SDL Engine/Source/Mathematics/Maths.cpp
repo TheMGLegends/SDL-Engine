@@ -67,8 +67,15 @@ float Maths::Min(float value1, float value2)
 int Maths::RandomRange(int min, int max)
 {
 	srand(unsigned int(time(NULL)));
-	int range = max - min + 1;
+	int range = max - min;
 	return min + rand() % range;
+}
+
+float Maths::RandomRange(float min, float max)
+{
+	srand(unsigned int(time(NULL)));
+	float range = max - min;
+	return min + (static_cast<float>(rand() / RAND_MAX) * range);
 }
 
 std::string Maths::FloatToString(float value, int precision)

@@ -1,2 +1,26 @@
-﻿  Debug.cpp
+﻿  Particle.cpp
+  AnimatorHandler.cpp
+  Animator.cpp
+  Debug.cpp
+  AudioHandler.cpp
+  Color.cpp
+  Camera.cpp
+  Mouse.cpp
+  InputHandler.cpp
+  PhysicsHandler.cpp
+  Rigidbody.cpp
+  CircleCollider.cpp
+  BoxCollider.cpp
+  CollisionHandler.cpp
+  Collider.cpp
+  Maths.cpp
+  GameObject.cpp
+  main.cpp
+  TimeHandler.cpp
+  Vector2.cpp
+  Generating Code...
+  Compiling...
+  Transform.cpp
+  TextureHandler.cpp
+  Generating Code...
   SDL Engine.vcxproj -> B:\University Projects\SDL-Engine\SDL Engine\x64\Debug\SDL Engine.exe
