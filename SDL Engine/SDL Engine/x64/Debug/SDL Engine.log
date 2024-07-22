@@ -1,4 +1,5 @@
-﻿  Particle.cpp
+﻿  ParticleHandler.cpp
+  Particle.cpp
   AnimatorHandler.cpp
   Animator.cpp
   Debug.cpp
@@ -17,10 +18,10 @@
   GameObject.cpp
   main.cpp
   TimeHandler.cpp
-  Vector2.cpp
   Generating Code...
   Compiling...
+  Vector2.cpp
   Transform.cpp
   TextureHandler.cpp
   Generating Code...
-  SDL Engine.vcxproj -> B:\University Projects\SDL-Engine\SDL Engine\x64\Debug\SDL Engine.exe
+  SDL Engine.vcxproj -> C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\x64\Debug\SDL Engine.exe

@@ -1,22 +1,23 @@
-B:\University Projects\SDL-Engine\SDL Engine\Source\Particles\Particle.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Particle.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Animations\AnimatorHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\AnimatorHandler.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Animations\Animator.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Animator.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Debugging\Debug.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Debug.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Audio\AudioHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\AudioHandler.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Generics\Color.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Color.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Viewing\Camera.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Camera.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Input\Mouse.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Mouse.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Input\InputHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\InputHandler.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Physics\PhysicsHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\PhysicsHandler.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Physics\Rigidbody.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Rigidbody.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\CircleCollider.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\CircleCollider.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\BoxCollider.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\BoxCollider.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\CollisionHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\CollisionHandler.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Collisions\Collider.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Collider.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Mathematics\Maths.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Maths.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\GameObject\GameObject.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\GameObject.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\main.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\main.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Time\TimeHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\TimeHandler.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Mathematics\Vector2.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Vector2.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Mathematics\Transform.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Transform.obj
-B:\University Projects\SDL-Engine\SDL Engine\Source\Textures\TextureHandler.cpp;B:\University Projects\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\TextureHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Particles\ParticleHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\ParticleHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Particles\Particle.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Particle.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Animations\AnimatorHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\AnimatorHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Animations\Animator.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Animator.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Debugging\Debug.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Debug.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Audio\AudioHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\AudioHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Generics\Color.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Color.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Viewing\Camera.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Camera.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Input\Mouse.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Mouse.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Input\InputHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\InputHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Physics\PhysicsHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\PhysicsHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Physics\Rigidbody.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Rigidbody.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Collisions\CircleCollider.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\CircleCollider.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Collisions\BoxCollider.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\BoxCollider.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Collisions\CollisionHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\CollisionHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Collisions\Collider.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Collider.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Mathematics\Maths.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Maths.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\GameObject\GameObject.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\GameObject.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\main.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\main.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Time\TimeHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\TimeHandler.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Mathematics\Vector2.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Vector2.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Mathematics\Transform.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\Transform.obj
+C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\Source\Textures\TextureHandler.cpp;C:\Users\matej\Documents\GitHub\SDL-Engine\SDL Engine\SDL Engine\x64\Debug\TextureHandler.obj

@@ -30,6 +30,7 @@ protected:
 	std::function<void(Collider*)> collisionStayResponse;
 	std::function<void(Collider*)> collisionExitResponse;
 	*/
+
 	std::function<void(std::shared_ptr<Collider>)> collisionEnterResponse;
 	std::function<void(std::shared_ptr<Collider>)> collisionStayResponse;
 	std::function<void(std::shared_ptr<Collider>)> collisionExitResponse;

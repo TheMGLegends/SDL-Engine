@@ -4,7 +4,7 @@
 
 #include <memory>
 
-#include "../GameObject/GameObject.h"
+class GameObject;
 
 /// @brief Abstract base class for all components to inherit from
 class Component : public Entity

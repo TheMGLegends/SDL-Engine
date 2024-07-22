@@ -1,25 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "B:\\University Projects\\SDL-Engine\\SDL Engine\\",
+  "WorkspaceRootPath": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\ParticleHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Particles\\ParticleHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\GameObject\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\ParticleHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Particles\\ParticleHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\GameObject\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\Particle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Particles\\Particle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\Particle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\Particles\\Particle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D5C77996-26C7-4A52-A2B2-ED77667263D6}|SDL Engine.vcxproj|solutionrelative:Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -30,72 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ParticleHandler.h",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\ParticleHandler.h",
-              "RelativeDocumentMoniker": "Source\\Particles\\ParticleHandler.h",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\ParticleHandler.h",
-              "RelativeToolTip": "Source\\Particles\\ParticleHandler.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Title": "GameObject.h",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.h",
+              "RelativeDocumentMoniker": "Source\\GameObject\\GameObject.h",
+              "ToolTip": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.h",
+              "RelativeToolTip": "Source\\GameObject\\GameObject.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-27T14:37:21.49Z",
+              "WhenOpened": "2024-07-22T15:10:26.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ParticleHandler.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\ParticleHandler.cpp",
-              "RelativeDocumentMoniker": "Source\\Particles\\ParticleHandler.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\ParticleHandler.cpp",
-              "RelativeToolTip": "Source\\Particles\\ParticleHandler.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Title": "GameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.cpp",
+              "RelativeDocumentMoniker": "Source\\GameObject\\GameObject.cpp",
+              "ToolTip": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.cpp",
+              "RelativeToolTip": "Source\\GameObject\\GameObject.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-27T14:37:29.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Particle.h",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\Particle.h",
-              "RelativeDocumentMoniker": "Source\\Particles\\Particle.h",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\Particle.h",
-              "RelativeToolTip": "Source\\Particles\\Particle.h",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-25T12:16:19.418Z",
+              "WhenOpened": "2024-07-22T15:10:27.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Particle.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\Particle.cpp",
-              "RelativeDocumentMoniker": "Source\\Particles\\Particle.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\Particles\\Particle.cpp",
-              "RelativeToolTip": "Source\\Particles\\Particle.cpp",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAiwGkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-25T12:16:24.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "main.cpp",
-              "DocumentMoniker": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
               "RelativeDocumentMoniker": "Source\\main.cpp",
-              "ToolTip": "B:\\University Projects\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
+              "ToolTip": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\main.cpp",
               "RelativeToolTip": "Source\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBoAAAARAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwBoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-21T14:34:22.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T14:34:22.173Z"
             }
           ]
         }
