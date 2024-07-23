@@ -35,5 +35,17 @@ public:
 	virtual void OnCollisionExit(std::shared_ptr<Collider> other) {}
 
 	virtual void OnDestroy() {}
+
+	// INFO: ECS System Methods
+
+	template<class T>
+	T* GetComponent();
+
+	template<class T, typename... Args>
+	T* AddComponent(Args&&... args);
+
+	/// @param componentID The specific component to be removed, if -1 then the first component found will be removed
+	template<class T>
+	void RemoveComponent(int componentID = -1);
 };
 

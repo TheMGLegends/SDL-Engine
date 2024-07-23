@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Source\\GameObject\\GameObject.h",
               "ToolTip": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.h",
               "RelativeToolTip": "Source\\GameObject\\GameObject.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAHAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-22T15:10:26.457Z",
               "EditorCaption": ""
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "Source\\GameObject\\GameObject.cpp",
               "ToolTip": "C:\\Users\\matej\\Documents\\GitHub\\SDL-Engine\\SDL Engine\\Source\\GameObject\\GameObject.cpp",
               "RelativeToolTip": "Source\\GameObject\\GameObject.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-22T15:10:27.526Z",
               "EditorCaption": ""
@@ -60,7 +60,8 @@
               "RelativeToolTip": "Source\\main.cpp",
               "ViewState": "AQIAACcAAAAAAAAAAAAiwBoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-21T14:34:22.173Z"
+              "WhenOpened": "2024-05-21T14:34:22.173Z",
+              "EditorCaption": ""
             }
           ]
         }

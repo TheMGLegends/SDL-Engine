@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Generics\Component.cpp" />
     <ClCompile Include="Source\Particles\ParticleHandler.cpp" />
     <ClCompile Include="Source\Particles\Particle.cpp" />
     <ClCompile Include="Source\Animations\AnimatorHandler.cpp" />

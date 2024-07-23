@@ -1,4 +1,5 @@
-﻿  ParticleHandler.cpp
+﻿  Component.cpp
+  ParticleHandler.cpp
   Particle.cpp
   AnimatorHandler.cpp
   Animator.cpp
@@ -17,9 +18,9 @@
   Maths.cpp
   GameObject.cpp
   main.cpp
-  TimeHandler.cpp
   Generating Code...
   Compiling...
+  TimeHandler.cpp
   Vector2.cpp
   Transform.cpp
   TextureHandler.cpp

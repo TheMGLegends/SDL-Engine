@@ -17,6 +17,9 @@ Particle::Particle(std::shared_ptr<GameObject> _owner, Texture _texture)
 {
 	// INFO: Add the particle to the particles handler
 	ParticleHandler::AddParticle(shared_from_this());
+
+	// INFO: Allow for more than one particle component
+	canHaveMultiple = true;
 }
 
 void Particle::Initialize()

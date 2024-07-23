@@ -15,6 +15,8 @@ Collider::Collider(std::shared_ptr<GameObject> _owner, Vector2 _position, Vector
 	collisionStayResponse = std::bind(&GameObject::OnCollisionStay, GetOwner(), std::placeholders::_1);
 	collisionExitResponse = std::bind(&GameObject::OnCollisionExit, GetOwner(), std::placeholders::_1);
 
+	// INFO: Allow for more than one collider component
+	canHaveMultiple = true;
 }
 
 void Collider::UpdatePosition()
