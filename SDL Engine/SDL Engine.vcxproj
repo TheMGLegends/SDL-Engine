@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\GameObject\GameObjectHandler.cpp" />
     <ClCompile Include="Source\Generics\Component.cpp" />
     <ClCompile Include="Source\Particles\ParticleHandler.cpp" />
     <ClCompile Include="Source\Particles\Particle.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="Source\Textures\TextureHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\GameObject\GameObjectHandler.h" />
     <ClInclude Include="Source\Particles\ParticleHandler.h" />
     <ClInclude Include="Source\Particles\Particle.h" />
     <ClInclude Include="Source\Animations\AnimatorHandler.h" />

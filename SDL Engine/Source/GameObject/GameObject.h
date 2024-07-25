@@ -10,6 +10,9 @@
 /// @brief Base class for all game objects to inherit from
 class GameObject : public Entity, public std::enable_shared_from_this<GameObject>
 {
+	// INFO: Allows the GameObjectHandler class to access private members of this class
+	friend class GameObjectHandler;
+
 protected:
 	//std::vector<Component*> components;
 	std::vector<std::shared_ptr<Component>> components;
